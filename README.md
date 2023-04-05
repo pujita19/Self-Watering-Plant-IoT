@@ -14,3 +14,5 @@ The project will include:
 * Real time display of soil moisture value and watering state on IoT dashboard
 * Bonus : Manually toggle water pump, LCD Screen, Threshold controller, Data Analytics
 
+Existing work shows automatic watering feature based on moisture content of soil but not other features like remote monitoring of plant.
+
