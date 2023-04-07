@@ -16,3 +16,15 @@ The project will include:
 
 Existing work shows automatic watering feature based on moisture content of soil but not other features like remote monitoring of plant.
 
+## Devices used
+
+* ESP8266
+* Capacitive soil moisture sensor
+* Relay module
+* Mini water pump
+* Mini water pipe
+* Jumper wires
+* DC transformer module
+* LCD Screen
+* I2C Module
+
