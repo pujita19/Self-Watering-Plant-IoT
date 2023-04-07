@@ -62,13 +62,16 @@ The status of pump ON or OFF at any instant of time is also shown on the dashboa
 
 ## Extensions
 ### Manually toggle water pump
-The given setup automatically waters the plant if the moisture content goes below a threshold. We will use status of pump as read write variable on the dashboard to toggle the water pump manually.
+The given setup automatically waters the plant if the moisture content goes below a threshold. We will use status of pump as read write bool variable on the dashboard to toggle the water pump manually.
 
 ### Data Analytics
 For data analytics we will collect information about the time it takes for the soil moisture content to change. We will collect the data using python serial library and write it to a csv file. We will then use this data to analyze trends in the time it takes to increase soil moisture by unit percent. We can see if the relationship between increase in soil moisture and time taken is linear or exponential etc.
 
 ![moisture graph](/line-graph.png)
 
+### LCD Screen
+We can also display the soil moisture content on an LCD screen in case the user is not able to view the data on the IoT dashboard due to internet disconnection or other problems. For the LCD screen we’ll need an I2C module. LCD character display will take a large number of GPIO pins if connected directly to the NodeMCU so we need an I2C board for this. VCC and GND of the I2C board will be connected to the 3.3V and ground of ESP8266. SCL pin will be connected to D1 and SDA pin to D2. 16 pins of LCD screen will be connected to I2C board. 
 
-
+### Threshold controller
+The desired value of soil moisture needed for each plant might be different. Therefore, we are providing an option for users to adjust the threshold percentages using IoT dashboard by making thresholds as read write float variable. 
 
