@@ -59,6 +59,7 @@ We are using the IoT Cloud platform to integrate the project and monitor it remo
 ESP8266 will be connected to the internet using WiFi using the <ESP8266WiFi.h> library. It will behave as a Client/STA and will share the soil moisture content (measured via the sensor) and the timing for watering to the IoT dashboard. 
 Soil moisture percent at any point of time can be depicted on the dashboard using line chart of IoT cloud dashboard.
 The status of pump ON or OFF at any instant of time is also shown on the dashboard using a toggle which can be used to change the status of pump manually.
+![iot dashboard](/iot_cloud_dashboard.png)
 
 ## Extensions
 ### Manually toggle water pump
