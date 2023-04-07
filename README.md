@@ -44,6 +44,6 @@ Relay, Pump and pipe are used to water the plant. Relay acts like a switch a con
 We’ll use the ESP8266 3.3V to power the soil moisture sensor module. We’ll connect the ESP8266 3.3V to VCC on the sensor and ESP8266 GND with sensor GND. Since the soil moisture sensor gives analog output we’ll connect the analog output of the soil moisture sensor (marked as AO) to the analog input pin A0 on the ESP8266 board. We’ll leave the D0 of the soil moisture sensor unconnected.
 
 ###  Water pump via relay
-We will connect the water pump to the ESP8266 via the relay. Because the relay module uses 3V power supply and ESP8266 uses 3.3V power supply we will add a transistor to drive the 5V relay with 3.3V. Transistor is connected to ESP8266 D0 pin through a resistor. Connecting the relay directly to the ESP8266 may fry the ESP8266. The other side of the relay is connected to the motor pump and adjustable power supply. The voltage of the motor pump is set between 6V and 9V. GND of the relay is connected to ESP8266 GND.
+We will connect the water pump to the ESP8266 via the relay. Relay module uses 3.3V power supply from ESP8266. The other side of the relay is connected to the motor pump and adjustable power supply. The voltage of the motor pump is set between 6V and 9V. GND of the relay is connected to ESP8266 GND.
 
 
