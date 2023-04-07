@@ -61,3 +61,14 @@ Soil moisture percent at any point of time can be depicted on the dashboard usin
 The status of pump ON or OFF at any instant of time is also shown on the dashboard using a toggle which can be used to change the status of pump manually.
 
 ## Extensions
+### Manually toggle water pump
+The given setup automatically waters the plant if the moisture content goes below a threshold. We will use status of pump as read write variable on the dashboard to toggle the water pump manually.
+
+### Data Analytics
+For data analytics we will collect information about the time it takes for the soil moisture content to change. We will collect the data using python serial library and write it to a csv file. We will then use this data to analyze trends in the time it takes to increase soil moisture by unit percent. We can see if the relationship between increase in soil moisture and time taken is linear or exponential etc.
+
+![moisture graph](/line-graph.png)
+
+
+
+
