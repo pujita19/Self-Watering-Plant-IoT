@@ -54,6 +54,7 @@ We first simply hold the soil moisture sensor in air and note the analog reading
 ### Variables
 We used *moistureValue* (read only float variable which takes values from 0 to 1024) which receives values from the ESP8266 using the soil moisture sensor.
 We used *moisturePerc* (read only CloudPercentage variable which takes values from 0 to 100) calculated from the moistureValue.
+We used *pumpState* (read only variable if only automatic watering is needed) as read write variable since manual change of pump state is implemented in this project.
 
 ### Triggering water pump
 The soil moisture is measured periodically (eg. every 1 sec). Each second, after obtaining the soil moisture percentage, we checked if it is less than some desired value. If yes, we digital write the D0 pin as LOW which sends the LOW signal to relay and turns the pump ON. Similarly, the pump is turned OFF when moisture percentage exceeds a threshold as D0 pin is set to HIGH. 
@@ -71,7 +72,7 @@ The status of pump ON or OFF at any instant of time is also shown on the dashboa
 
 ## Extensions
 ### Manually toggle water pump
-The given setup automatically waters the plant if the moisture content goes below a threshold. We used variable *status* of pump as read write bool variable on the dashboard to toggle the water pump manually.
+The given setup automatically waters the plant if the moisture content goes below a threshold. We used variable *pumpState* as read write bool variable to toggle the water pump manually using dashboard if needed.
 
 ### Data Analytics
 For data analytics we collected information about the time it takes for the soil moisture content to change. We collected the data using python serial library and write it to a csv file. The soil moisture is plotted after dripping the water from the pump slowly for around 6 minutes.  We then used this data to analyze trends in the time it takes to increase soil moisture by unit percent. We can see if the relationship between increase in soil moisture and time taken is linear or exponential etc. We see that initially the moisture drops very fast and gets saturated in some time using the data collected.
