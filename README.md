@@ -52,9 +52,10 @@ We connected the water pump to the ESP8266 via the relay. Relay module uses 3.3V
 We first simply hold the soil moisture sensor in air and note the analog reading. This will give the dry value, let's call it air_value. We then took a glass of water and dip the sensor in it and read the analog value that gives the wet value, let’s call it water_value. We’ll then map the readings of the soil moisture sensor readings in the range air_value to water_value to 0 and 100 respectively. This gave us soil moisture readings in percentages.
 
 ### Variables
-We used *moistureValue* (read only float variable which takes values from 0 to 1024) which receives values from the ESP8266 using the soil moisture sensor.
-We used *moisturePerc* (read only CloudPercentage variable which takes values from 0 to 100) calculated from the moistureValue.
-We used *pumpState* (read only variable if only automatic watering is needed) as read write variable since manual change of pump state is implemented in this project.
+We used 
+* *moistureValue* (read only float variable which takes values from 0 to 1024) which receives values from the ESP8266 using the soil moisture sensor.
+* *moisturePerc* (read only CloudPercentage variable which takes values from 0 to 100) calculated from the moistureValue.
+* *pumpState* (read only variable if only automatic watering is needed) as read write variable since manual change of pump state is implemented in this project.
 
 ### Triggering water pump
 The soil moisture is measured periodically (eg. every 1 sec). Each second, after obtaining the soil moisture percentage, we checked if it is less than some desired value. If yes, we digital write the D0 pin as LOW which sends the LOW signal to relay and turns the pump ON. Similarly, the pump is turned OFF when moisture percentage exceeds a threshold as D0 pin is set to HIGH. 
