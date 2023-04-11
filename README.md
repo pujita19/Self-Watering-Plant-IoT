@@ -41,7 +41,7 @@ Relay, Pump and pipe are used to water the plant. Relay acts like a switch which
 ![Circuit diagram](/circuit_diagram.png)
 
 ### Soil moisture sensor
-We used the ESP8266 3.3V to power the soil moisture sensor module. ESP8266 3.3V is connected to the VCC on the sensor and ESP8266 GND is connected to the sensor GND. Since the soil moisture sensor gives analog output, we connect the analog output of the soil moisture sensor (marked as AO) to the analog input pin A0 on the ESP8266 board leaving the D0 of the soil moisture sensor unconnected.
+We used the ESP8266 3.3V to power the soil moisture sensor module. ESP8266 3.3V is connected to the VCC on the sensor and ESP8266 GND is connected to the sensor GND. Since the soil moisture sensor gives analog output, we connected the analog output of the soil moisture sensor (marked as AO) to the analog input pin A0 on the ESP8266 board leaving the D0 of the soil moisture sensor unconnected.
 
 ###  Water pump via relay
 We connected the water pump to the ESP8266 via the relay. Relay module uses 3.3V power supply from ESP8266. The other side of the relay is connected to the motor pump and adjustable power supply. The voltage of the motor pump is set at 3V only. GND of the relay is connected to ESP8266 GND.
@@ -49,7 +49,7 @@ We connected the water pump to the ESP8266 via the relay. Relay module uses 3.3V
 ## Working
 
 ### Soil moisture percentage
-We first simply hold the soil moisture sensor in air and note the analog reading. This will give the dry value, let's call it air_value. We then took a glass of water and dip the sensor in it and read the analog value that gives the wet value, let’s call it water_value. We’ll then map the readings of the soil moisture sensor readings in the range air_value to water_value to 0 and 100 respectively. This gave us soil moisture readings in percentages.
+We first held the soil moisture sensor in air and noted the analog reading. This gave us the dry value, let's call it air_value. We then took a glass of water and dipped the sensor in it and read the analog value that gave the wet value, let’s call it water_value. We then mapped the readings of the soil moisture sensor in the range air_value to water_value to 0 and 100 respectively. This gave us soil moisture readings in percentages.
 
 ### Variables
 We used 
@@ -76,7 +76,7 @@ The status of pump ON or OFF at any instant of time is also shown on the dashboa
 The given setup automatically waters the plant if the moisture content goes below a threshold. We used variable *pumpState* as read write bool variable to toggle the water pump manually using dashboard if needed.
 
 ### Data Analytics
-For data analytics we collected information about the time it takes for the soil moisture content to change. We collected the data using python serial library and write it to a csv file. The soil moisture is plotted after dripping the water from the pump slowly for around 6 minutes.  We then used this data to analyze trends in the time it takes to increase soil moisture by unit percent. We can see if the relationship between increase in soil moisture and time taken is linear or exponential etc. We see that initially the moisture drops very fast and gets saturated in some time using the data collected.
+For data analytics we collected information about the time it takes for the soil moisture content to change. We collected the data using python serial library and wrote it to a csv file. The soil moisture is plotted after allowing water from the pump to flow dop by drop for around 6 minutes.  We then used this data to analyze trends in the time it takes to increase soil moisture by unit percent. We can see whether the relationship between increase in soil moisture and time taken is linear or exponential etc. Using the data collected, we see that initially the moisture drops very fast, later it becomes saturated.
 
 ![moisture graph](/line-graph.png)
 
