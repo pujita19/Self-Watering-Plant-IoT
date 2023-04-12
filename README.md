@@ -48,6 +48,13 @@ A capacitive moisture sensor works by measuring the changes in capacitance cause
 Relay, Pump and pipe are used to water the plant. Relay acts like a switch which a controller can turn on to provide power to the pump. It also acts as a step up transformer incase additional power is needed to the pump to be activated.
 
 ## Code Setup
+### Install ESP8266 to run in Arduino IDE
+The code given is written in IoT Cloud but to run code in Arduino IDE
+* Include library <ESP8266WiFi.h> and install ESP8266 Board in Arduino IDE. For installation, go to Arduino IDE and follow the path File/preferences and open the preference tab. Paste the link http://arduino.esp8266.com/stable/package_esp8266com_index.json in the additional board manager URL box. After this, go to Tool/ Board Tools/board/board manager and type ESP8266. You will find a board of ESP8266 click on the install option to get the board installed.
+* Arduino code shouldn't contain read write IoT cloud dashboard variables.
+
+### Include LiquidCrystal library for LCD
+
 
 ## Circuit 
 ### Circuit diagram
