@@ -5,6 +5,7 @@ IoT project demonstrating automatic watering plant
 * [Introduction and need for project](https://github.com/pujita19/Self-Watering-Plant-IoT#introduction-and-need-for-project)
 * [Features of the project](https://github.com/pujita19/Self-Watering-Plant-IoT#features-of-the-project)
 * [Devices used](https://github.com/pujita19/Self-Watering-Plant-IoT#devices-used)
+* [Code setup / Libraries used](https://github.com/pujita19/Self-Watering-Plant-IoT#code-setup)
 * [Circuit](https://github.com/pujita19/Self-Watering-Plant-IoT#circuit)
 * [Working](https://github.com/pujita19/Self-Watering-Plant-IoT#working)
 * [Real time monitoring](https://github.com/pujita19/Self-Watering-Plant-IoT#real-time-monitoring)
@@ -45,6 +46,8 @@ A capacitive moisture sensor works by measuring the changes in capacitance cause
 
 ### Watering 
 Relay, Pump and pipe are used to water the plant. Relay acts like a switch which a controller can turn on to provide power to the pump. It also acts as a step up transformer incase additional power is needed to the pump to be activated.
+
+## Code Setup
 
 ## Circuit 
 ### Circuit diagram
