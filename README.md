@@ -10,6 +10,7 @@ IoT project demonstrating automatic watering plant
 * [Real time monitoring](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#real-time-monitoring)
 * [Extensions](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#extensions)
 
+
 ## Introduction and need for project
 It often happens that we’ve forgotten to water the plants and it has dried or even died. Often this happens due to our schedule in spite of the fact that we are really interested in growing plants. Also when we are far from home for vacation it is difficult to judge the status of the soil and water it if required.
 
