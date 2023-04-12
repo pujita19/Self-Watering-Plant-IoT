@@ -54,7 +54,8 @@ The code given is written in IoT Cloud but to run code in Arduino IDE
 * Arduino code shouldn't contain read write IoT cloud dashboard variables.
 
 ### Include LiquidCrystal library for LCD
-
+* Include library <LiquidCrystal_I2C.h> to run code for LCD. IoT cloud takes care of library imports by itself and you need not put additional effort apart from including the library in code.
+* To use this library in Arduino IDE, you need to download LiquidCrystal library using the zip file provided in the code. Add the library in Arduino IDE using Sketch/Include Library/Add .ZIP Library tab. 
 
 ## Circuit 
 ### Circuit diagram
