@@ -2,13 +2,13 @@
 IoT project demonstrating automatic watering plant
 
 ## Content
-* [Introduction and need for project](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#introduction-and-need-for-project)
-* [Features of the project](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#features-of-the-project)
-* [Devices used](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#devices-used)
-* [Circuit](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#circuit)
-* [Working](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#working)
-* [Real time monitoring](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#real-time-monitoring)
-* [Extensions](https://github.com/pujita19/Self-Watering-Plant-IoT/edit/main/README.md#extensions)
+* [Introduction and need for project](https://github.com/pujita19/Self-Watering-Plant-IoT#introduction-and-need-for-project)
+* [Features of the project](https://github.com/pujita19/Self-Watering-Plant-IoT#features-of-the-project)
+* [Devices used](https://github.com/pujita19/Self-Watering-Plant-IoT#devices-used)
+* [Circuit](https://github.com/pujita19/Self-Watering-Plant-IoT#circuit)
+* [Working](https://github.com/pujita19/Self-Watering-Plant-IoT#working)
+* [Real time monitoring](https://github.com/pujita19/Self-Watering-Plant-IoT#real-time-monitoring)
+* [Extensions](https://github.com/pujita19/Self-Watering-Plant-IoT#extensions)
 
 
 ## Introduction and need for project
